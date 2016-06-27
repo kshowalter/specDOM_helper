@@ -1,0 +1,16 @@
+{
+  "name": "specDOM helper",
+  "version": "0.1.0",
+  "description": "Helps create specDOM objects.",
+  "main": "index.js",
+  "author": "Ketih Showalter",
+  "license": "BSD-2-Clause",
+  "keywords": [
+    "DOM",
+    "specDOM"
+  ],
+  "repository" : {
+    "type": "git",
+    "url": "git@github.com:kshowalter/specDOM_helper.git"
+  }
+}
