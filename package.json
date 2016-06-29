@@ -1,5 +1,5 @@
 {
-  "name": "specDOM helper",
+  "name": "specdom_helper",
   "version": "0.1.0",
   "description": "Helps create specDOM objects.",
   "main": "index.js",
