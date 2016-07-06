@@ -2,6 +2,7 @@
 var mkSpec = function(tag, arguments){
   var props = undefined;
   var children = undefined;
+  var meta = undefined;
 
   var args = Array.prototype.slice.call(arguments);
   var inputs = [];
@@ -9,7 +10,11 @@ var mkSpec = function(tag, arguments){
     if(argument.constructor === Array){
       children = argument;
     } else if(argument.constructor === Object){
-      props = argument;
+      if( props === undefined ){
+        props = argument;
+      } else {
+        meta = argument;
+      }
     } else if(argument.constructor === String){
       inputs.push(argument);
     } else {
