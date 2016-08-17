@@ -54,7 +54,7 @@ var helper = {
 };
 
 [
-  'div', 'span', 'a', 'ul', 'li', 'br', 'h1', 'h2', 'h3'
+  'div', 'span', 'a', 'ul', 'li', 'br', 'h1', 'h2', 'h3', 'input'
 ].forEach(function(tag){
   helper[tag] = function(){
     return mkSpec(tag, arguments);
@@ -67,4 +67,4 @@ var helper = {
  */
 module.exports = helper;
 
-//import {div, span, a, ul, li, br, h1, h2, h3} from 'specdom_helper';
+//import {div, span, a, ul, li, br, h1, h2, h3, input} from 'specdom_helper';
