@@ -1,10 +1,9 @@
-
-var mkSpec = function(tag, arguments){
+var mkSpec = function(tag, args){
   var props = undefined;
   var children = undefined;
   var meta = undefined;
 
-  var args = Array.prototype.slice.call(arguments);
+  var args = Array.prototype.slice.call(args);
   var inputs = [];
   args.forEach(function(argument){
     if(argument.constructor === Array){
@@ -47,14 +46,14 @@ var mkSpec = function(tag, arguments){
 var helper = {
   type: 'specDOM_helper'
 
-  //div: function(){ return mkSpec('div', arguments); },
-  //span: function(){ return mkSpec('span', arguments); },
-  //a: function(){ return mkSpec('a', arguments); }
+  //div: function(){ return mkSpec('div', args); },
+  //span: function(){ return mkSpec('span', args); },
+  //a: function(){ return mkSpec('a', args); }
 
 };
 
 [
-  'div', 'span', 'a', 'ul', 'li', 'br', 'h1', 'h2', 'h3', 'input'
+  'div', 'span', 'p', 'a', 'ul', 'li', 'br', 'h1', 'h2', 'h3', 'input'
 ].forEach(function(tag){
   helper[tag] = function(){
     return mkSpec(tag, arguments);
@@ -67,4 +66,4 @@ var helper = {
  */
 module.exports = helper;
 
-//import {div, span, a, ul, li, br, h1, h2, h3, input} from 'specdom_helper';
+//import {div, span, p, a, ul, li, br, h1, h2, h3, input} from 'specdom_helper';
